@@ -4,6 +4,12 @@
 # Let's bring in some error handling to display a nice message.
 #
 
+class String
+    def is_i?
+       /\A[-+]?\d+\z/ === self
+    end
+end
+
 def divide (dividend,divisor)
     quotient = dividend/divisor
 end

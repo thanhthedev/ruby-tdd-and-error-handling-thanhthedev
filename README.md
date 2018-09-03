@@ -7,8 +7,8 @@ For these two challenges, work in pairs.
 Modify the code in errors/divide.rb to better handle errors:
 1. Print a more useful message to the user when divide by 0 occurs.
 2. Give the user 3 chances to provide valid input when they try to divide by 0.
-3. Create a method to validate that a number is always entered by the user. When a non-number is entered, use a custom error called NonNumericArgumentError to alert the user that this type of error occurred. (Hint: You can use the String to_i? method provided in the divide.rb file to complete this step).
-4. Now ask your partner to give you one of their previous challenge files, and add some error handling to it. Remember than when you refactor 'legacy code', you should do something small to leave it better than when you found it - the campsite rule!
+3. Create a method to validate that a number is always entered by the user. When a non-number is entered, use a custom error called NonNumericArgumentError to alert the user that this type of error occurred. (Hint: You can use the String is_i? method provided in the divide.rb file to complete this step).
+4. Now ask your partner to give you one of their previous challenge files, and add some error handling to it. Remember that when you refactor 'legacy code', you should do something small to leave it better than when you found it - the campsite rule!
 
 ## Part 2: TDD
 
