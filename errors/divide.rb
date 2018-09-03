@@ -19,15 +19,16 @@ puts "--- Division App ---"
 puts "--------------------"
 begin
     puts "Give me a number"
-    number1 = gets.chomp.to_i
+    number1 = Integer(gets.chomp)
     puts "Give me another number"
-    number2 = gets.chomp.to_i
+    number2 = Integer(gets.chomp)
     answer = divide(number1,number2)
     print "#{number1} divided by #{number2} = "
     print "#{answer || "error"}"
     puts
 rescue
-    puts "Error occured"
+    puts "NonNumericArgumentError occured. Stop trying to divide by 0 or input an integer."
+retry
 end
 #
 # Code along challenge: if they hit an error, take them back to "give me a number"
